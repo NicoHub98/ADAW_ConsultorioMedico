@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Clínica del Sol</title>
+    <script>
+        function enviarConsulta() {
+            alert("Consulta enviada exitosamente!");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="bodyImage"></div>
+    <div class="contenedorTodo">
+        <header>
+            <h1><a class="a_h1" href="index.html">Clínica del Sol</a></h1>
+            <h2>Sistema de Gestión de Turnos Médicos</h2>
+        </header>
+        <div class="contenedor_aside_section">
+            <aside class="aside">
+                <p class="aside_p">Seleccione la Especialidad Médica</p>
+                <div class="aside_contenedor_li">
+                    <li class="aside_li"><a href="Controlador?accion=todo">Catálogo</a></li>
+                    <li class="aside_li"><a href="Controlador?accion=clinicaGeneral">Clínica General</a></li>
+                    <li class="aside_li"><a href="Controlador?accion=gastroenterologia">Gastroenterología</a></li>
+                    <li class="aside_li"><a href="Controlador?accion=cardiologia">Cardiología</a></li>
+                    <li class="aside_li"><a href="Controlador?accion=pediatria">Pediatría</a></li>
+                    <li class="aside_li"><a href="Controlador?accion=oncologia">Oncología</a></li>
+                    <li class="aside_li"><a href="contactenos.html">Contáctenos</a></li>
+                </div>
+            </aside>
+            <section>
+                <form class="formContactenos" action="index.html" method="GET">
+                    <p class="formContactenos_titulo">Contáctenos</p>
+                    <p class="formContactenos_p">
+                        <label for="nombre">Nombre:</label><br>
+                        <input class="formContactenos_input" type="text" name="nombre" placeholder="Ingrese su nombre" size="70">
+                    </p>
+                    <p class="formContactenos_p">
+                        <label for="apellido">Apellido:</label><br>
+                        <input class="formContactenos_input" type="text" name="apellido" placeholder="Ingrese su apellido" size="70">
+                    </p>
+                    <p class="formContactenos_p">
+                        <label for="mail">Email:</label><br>
+                        <input class="formContactenos_input" type="email" name="mail" placeholder="Ingrese su email" size="70">
+                    </p>
+                    <p class="formContactenos_p">
+                        <label for="telefono">Teléfono:</label><br>
+                        <input class="formContactenos_input" type="number" name="telefono" placeholder="Ingrese su numero" size="70">
+                    </p>
+                    <p class="formContactenos_p">
+                        <label for="consulta">Tu consulta:</label><br>
+                        <textarea name="consulta" id="" cols="72" rows="5" placeholder="Consulta..."></textarea>
+                    </p>
+                    <input onclick="enviarConsulta()" class="formContactenos_button" type="submit" value="Enviar">
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

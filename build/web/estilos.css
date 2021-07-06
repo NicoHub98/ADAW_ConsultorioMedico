@@ -1,0 +1,356 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: auto;
+    position: relative;
+}
+body::before{
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-image: url(Img/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+}
+.textoPrincipal{
+    display: inline-block;
+    position: relative;
+    top: 300px;
+    left: 55%;
+    background-color: rgba(211, 246, 255, .6);
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px #0FCEFF;
+}
+
+/*Header*/
+header{
+    font-size: 1.5em;
+    background-color: #35D2F8;
+    color: black;
+    width: 100%;
+    text-shadow: 1px 1px 5px white;
+    border-bottom: 1px solid black;
+}
+h1{
+    margin-left: 5%;
+}
+.a_h1{
+    text-decoration: none;
+    transition: color .2s linear 0s, text-shadow .2s linear 0s;
+}
+.a_h1:hover{
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+h2{
+    display: inline-block;
+    margin-left: 10%;
+}
+.opcAdmin{
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    left: 15%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #07A6CD;
+    transition: transform .05s linear 0s;
+}
+.opcAdmin:hover{
+    transform: scale(1.02);
+    background-color: #7DDEF6;
+}
+/* .aside_li:last-child{
+    background-color: #07A6CD;
+}
+.aside_li:hover{
+    transform: scale(1.2);
+    background-color: #7DDEF6;
+} */
+/*Contenedor*/
+.contenedor_aside_section{
+    position: relative;
+    height: 800px;
+}
+.contenedor_aside_section_esp{
+    position: relative;
+    height: 500px;
+}
+/*Aside*/
+aside{
+    position: sticky;
+    display: inline-block;
+    top: 0;
+    width: 20%;
+}
+.aside_p{
+    background-color: rgba(211, 246, 255, .6);
+    margin: 15px;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.aside_contenedor_li{
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top: 3px solid #001FFF;
+    border-left: 3px solid #001FFF;
+    border-bottom: 3px solid #001FFF;
+}
+.aside_li{
+    font-size: 1.1em;
+    text-align: center;
+    background-color: #35D2F8;
+    list-style: none;
+    margin: 30px;
+    /* margin: 30px;
+    margin-left: 50px; */
+    width: 100%;
+    padding: 3px;
+    border-radius: 5px;
+    transition: transform .1s linear 0s;
+}
+.aside_li:last-child{
+    background-color: #07A6CD;
+}
+.aside_li:hover{
+    transform: scale(1.2);
+    background-color: #7DDEF6;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Section*/
+section{
+    /* border: 1px solid blue; */
+    display: inline-block;
+    position: absolute;
+    width: 80%;
+    right: 0;
+}
+
+/*Tabla*/
+.tablaPrincipal{
+    position: absolute;
+    top: 50px;
+    left: 5%;
+    border-collapse: collapse;
+    width: 70%;
+}
+.trPrincipal, .tdPrincipal {
+    /* border: 1px solid black; */
+    text-align: center;
+    padding: 5px;
+}
+.trPrincipal:first-child{
+    font-weight: bold;
+}
+.trPrincipal:nth-child(even) {
+    background-color: rgba(242, 242, 242, .8);
+}
+.trPrincipal:nth-child(odd) {
+    background-color: rgba(243, 254, 214, .8);
+}
+img{
+    border: 1px solid black;
+    width: 110px;
+    height: 110px;
+}
+.img_individual{
+    width: 150px;
+    height: 150px;
+}
+
+/*Formulario solicitar turno*/
+.container_solicitaTurno{
+    /* border: 1px solid black; */
+    display: inline-block;
+    position: relative;
+    width: 70%;
+    top: 250px;
+    left: 10%;
+}
+.solicitaTurno_Tabla{
+    margin: 15px;
+}
+.solicitaTurno_td{
+    /* border: 1px solid black; */
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+.solicitaTurno_Boton{
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    background-color: #35D2F8;
+    border-radius: 5px;
+    transition: transform .1s linear 0s;
+}
+.solicitaTurno_Boton:hover{
+    background-color: #07A6CD;
+    transform: scale(1.05);
+}
+fieldset{
+    display: inline-block;
+    width: 100%;
+    background-color: #f2f2f2a8;
+}
+input{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: rgba(242, 242, 242, .5);
+    outline: none;
+}
+
+/*Contactenos*/
+.formContactenos{
+    background-color: rgba(195, 237, 255, .5);
+    position: relative;
+    top: 50px;
+    left: 15%;
+    border-radius: 5px;
+    display: inline-block;
+}
+.formContactenos_titulo{
+    padding-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-bottom: 1px solid black;
+}
+.formContactenos_p{
+    background-color: rgba(242, 242, 242, .5);
+    margin: 30px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.formContactenos_input{
+    font-size: 1.1em;
+    border-radius: 5px;
+    background-color: rgba(242, 242, 242, 0);
+    border-bottom: none;
+    margin-top: 5px;
+}
+.formContactenos_input:focus{
+    background: rgb(242,242,242);
+    background: linear-gradient(180deg, rgba(242,242,242,0.5) 0%, rgba(232,255,178,.5) 50%);
+}
+textarea{
+    font-size: 1.1em;
+    margin-top: 5px;
+    background-color: rgba(242, 242, 242, 0);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+textarea:focus{
+    background: rgb(242,242,242);
+    background: linear-gradient(180deg, rgba(242,242,242,0.5) 0%, rgba(232,255,178,.5) 50%);
+}
+/* .solicitaTurno_Boton:{
+    position: relative;
+    left: 45%;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+} */
+.formContactenos_button{
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    background-color: #35D2F8;
+    border-radius: 5px;
+    transition: transform .1s linear 0s;
+    position: relative;
+    left: 45%;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+.formContactenos_button:hover{
+    background-color: #07A6CD;
+    transform: scale(1.05);
+}
+
+/*Opciones de administrador*/
+.tdOpc{
+    width: 100px;
+}
+.icono{
+    height: 30px;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all .1s linear 0s;
+}
+.icono:hover{
+    transform: scale(1.3);
+}
+.tdAdmin{
+}
+.tdAdmin input{
+    font-size: 1.3em;
+    width: 300px;
+}
+.inputAgregar{
+    width: 100px;
+}
+.btnAdmin{
+    border: 1px solid black;
+    left: -2px;
+    padding: 2px;
+    font-size: 14px;
+}
+.btnAdmin2{
+    border: 1px solid black;
+    left: 0px;
+    top: 5px;
+    padding: 5px;
+    font-size: 20px;
+    transition: all .1s linear 0s;
+}
+.inputfile{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+    cursor: pointer;
+	z-index: -1;
+}
+.inputfile + label {
+    border-radius: 10px;
+    margin: 1px;
+    padding: 2px;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    cursor: pointer;
+    transition: all .1s linear 0s;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    cursor: pointer;
+    background-color: red;
+}
